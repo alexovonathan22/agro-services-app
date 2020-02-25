@@ -1,0 +1,65 @@
+﻿@model AgroApp.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<div class="page-wrapper  p-t-180 p-b-100 font-robo">
+    <div class="wrapper wrapper--w960">
+        <div class="card card-2">
+            <div class="card-heading"></div>
+            <div class="card-body">
+                <h2 class="title">Create Account</h2>
+
+                @using (Html.BeginForm("Register", "Account", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+
+                    @Html.ValidationSummary("", new { @class = "text-danger" })
+                    <div class="input-group">
+                        @Html.TextBoxFor(m => m.NewCustomerName, new { @class = "input--style-2", type = "text", placeholder = "Enter identity" })
+                    </div>
+                    <div class="input-group">
+
+                        @Html.TextBoxFor(m => m.Address, new { @class = "input--style-2", type = "text", placeholder = "Enter reachable address" })
+
+                    </div>
+
+                    <div class="input-group">
+                        @Html.TextBoxFor(m => m.ContactNumber, new { @class = "input--style-2", type = "number", placeholder = "Enter phone number" })
+                    </div>
+
+                    <div class="input-group">
+
+                        @Html.TextBoxFor(m => m.Email, new { @class = "input--style-2", type = "email", placeholder = "Enter valid email" })
+
+                    </div>
+
+                    <div class="input-group">
+                        @Html.PasswordFor(m => m.Password, new { @class = "input--style-2", type = "password", placeholder = "Enter password" })
+
+                    </div>
+
+                    <div class="input-group">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "input--style-2", type = "password", placeholder = "Confirm password" })
+                    </div>
+
+                    <div class="p-t-30">
+                        <button class="btn btn--radius btn--green" type="submit" id="register">Register</button>
+                    </div>
+                }
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}
+
+

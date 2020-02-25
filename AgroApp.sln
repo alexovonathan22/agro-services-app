@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgroApp", "AgroApp\AgroApp.csproj", "{ACDADC63-1AE5-4AC4-8DAC-44FBC3E5A534}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgroApp.Tests", "AgroApp.Tests\AgroApp.Tests.csproj", "{C0440BA1-4E96-4872-BD8C-77821DDD0E00}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{88F1C03E-BD0D-49D1-A6B8-CEB47679636E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACDADC63-1AE5-4AC4-8DAC-44FBC3E5A534}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACDADC63-1AE5-4AC4-8DAC-44FBC3E5A534}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACDADC63-1AE5-4AC4-8DAC-44FBC3E5A534}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACDADC63-1AE5-4AC4-8DAC-44FBC3E5A534}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0440BA1-4E96-4872-BD8C-77821DDD0E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0440BA1-4E96-4872-BD8C-77821DDD0E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0440BA1-4E96-4872-BD8C-77821DDD0E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0440BA1-4E96-4872-BD8C-77821DDD0E00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F1C03E-BD0D-49D1-A6B8-CEB47679636E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F1C03E-BD0D-49D1-A6B8-CEB47679636E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F1C03E-BD0D-49D1-A6B8-CEB47679636E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F1C03E-BD0D-49D1-A6B8-CEB47679636E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E856F7A3-8034-4923-BB22-7AC7A1C84218}
+	EndGlobalSection
+EndGlobal
