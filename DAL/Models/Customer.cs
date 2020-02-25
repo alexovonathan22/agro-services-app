@@ -9,7 +9,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace DAL.Models
 {
-    public class Customer : AccountViewModel
+    public class Customer
     {
         [Required]
         [Display(Name = "Name")]
